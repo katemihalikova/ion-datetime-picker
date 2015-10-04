@@ -1,5 +1,8 @@
 # ion-datetime-picker
-[![Bower version](https://badge.fury.io/bo/ion-datetime-picker.svg)](http://badge.fury.io/bo/ion-datetime-picker)
+![GitHub version](https://img.shields.io/github/release/katemihalikova/ion-datetime-picker.svg?style=flat-square)
+![Bower version](https://img.shields.io/bower/v/ion-datetime-picker.svg?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/katemihalikova/ion-datetime-picker.svg?style=flat-square)
+![License](https://img.shields.io/github/license/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 
 > Date and/or time picker for awesome [Ionic framework](http://ionicframework.com/)
 
@@ -90,4 +93,4 @@ Default, global labels of the buttons at the bottom of the picker.
 
 ## Daylight saving time
 
-The datetime picker is using `Date` object with your browser's timezone, including any DST. When you change the date, hour, or minute and set the time to an invalid value because of moving from 2:00 to 3:00 at the beginning of DST, the time is automatically adjusted to a valid value. On the other hand, when the DST ends, I do NOT take the inserted hour into consideration, but this may be fixed in the future.
+The datetime picker is using `Date` object with your browser's timezone, including any DST. When you change the date, hour, minute, or second, which sets the time to an invalid value because of moving from 2:00 to 3:00 at the beginning of DST, the time is automatically adjusted to a valid value. On the other hand, when the DST ends, I do NOT take the inserted hour into consideration, but this may be fixed in the future.
