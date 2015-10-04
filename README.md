@@ -9,6 +9,7 @@
 
 # Demo
 
+Demo app is available - enter code `8d75a0ec` into [Ionic View](http://view.ionic.io/).
 Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP/).
 
 # Introduction
