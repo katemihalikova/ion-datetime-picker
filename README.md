@@ -7,11 +7,6 @@
 
 > Date and/or time picker for awesome [Ionic framework](http://ionicframework.com/)
 
-# Demo
-
-Demo app is available - enter code `8d75a0ec` into [Ionic View](http://view.ionic.io/).
-Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP/).
-
 # Introduction
 
 I made this component because of poor implementation of native datetime picker in Android webview. How funny it was when I discovered that I can only pick a time between 0:00 and 11:59 on my 24-hour clock phone :)
@@ -25,6 +20,17 @@ The ion-datetime-picker component has these features:
 - Pick time with or without seconds
 - Configure popup title and button labels
 - Configure i18n to get weekdays and months in your language
+
+# Demo
+
+Demo app is available - enter code `8d75a0ec` into [Ionic View](http://view.ionic.io/).
+Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP/).
+
+#Screenshots
+
+<img src="/../screenshots/date.png?raw=true" alt="Date picker" width="239">
+<img src="/../screenshots/time.png?raw=true" alt="Time picker" width="239">
+<img src="/../screenshots/datetime.png?raw=true" alt="Datetime picker" width="239">
 
 # Installation
 
