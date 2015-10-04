@@ -6,8 +6,8 @@
     ],
     "description": "Date and/or time picker for awesome ionic framework",
     "main": [
-        "release/ion-datetime-picker.js",
-        "release/ion-datetime-picker.css"
+        "release/ion-datetime-picker.min.js",
+        "release/ion-datetime-picker.min.css"
     ],
     "keywords": [
         "ion-datetime-picker",
@@ -25,6 +25,6 @@
         "node_modules"
     ],
     "dependencies": {
-        "ionic": ">=1.0.0"
+        "ionic": ">=1.0.0-beta.9"
     }
 }
