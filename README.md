@@ -91,15 +91,25 @@ Simple internationalization option. Inject the `$ionicPickerI18n` factory into y
 
 ### `weekdays` key
 
-Array of weekdays abbreviations. `0` is Sunday. If `moment` is installed, I try to get localized data from it, otherwise English ones are used.
+Array of weekdays abbreviations. `0` is Sunday. If `moment` is installed, I try to get localized data from it, otherwise English ones are used as default.
 
 ### `months` key
 
-Array of months names. `0` is January. If `moment` is installed, I try to get localized data from it, otherwise English ones are used.
+Array of months names. `0` is January. If `moment` is installed, I try to get localized data from it, otherwise English ones are used as default.
 
 ### `ok` and `cancel` keys
 
 Default, global labels of the buttons at the bottom of the picker.
+
+```js
+angular.module("myApp")
+    .run(function($ionicPickerI18n) {
+        $ionicPickerI18n.weekdays = ["Нд", "Lu", "Út", "Mi", "To", "금", "Sá"];
+        $ionicPickerI18n.months = ["Janvier", "Febrero", "März", "四月", "Maio", "Kesäkuu", "Červenec", "अगस्त", "Вересень", "Październik", "Νοέμβριος", "డిసెంబర్"];
+        $ionicPickerI18n.ok = "オーケー";
+        $ionicPickerI18n.cancel = "Cancelar";
+    });
+```
 
 ## Daylight saving time
 
