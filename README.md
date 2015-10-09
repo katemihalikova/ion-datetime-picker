@@ -81,6 +81,8 @@ By default, in the time picker, I use 24-hour clock. Set this attribute to chang
 
 Configure the title and sub title of the popup with the picker.
 
+_HINT: Use `data-title` instead of `title` if you are going to use the app in the desktop browser to prevent leaking of the text into a mouseover tooltip._
+
 ### `button-ok` and `button-cancel` attributes
 
 Configure the text of buttons at the bottom of the picker.
