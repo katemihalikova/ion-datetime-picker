@@ -1,7 +1,7 @@
 # ion-datetime-picker
 ![GitHub version](https://img.shields.io/github/release/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 ![Bower version](https://img.shields.io/bower/v/ion-datetime-picker.svg?style=flat-square)
-![Ionic version](https://img.shields.io/badge/ionic-%3E%3D1.0.0--beta.9-yellow.svg?style=flat-square)
+![Ionic version](https://img.shields.io/badge/ionic-%5E1.0.0--beta.9-yellow.svg?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 ![License](https://img.shields.io/github/license/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 
