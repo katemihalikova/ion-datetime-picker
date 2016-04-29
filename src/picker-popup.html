@@ -10,7 +10,9 @@
         </label>
         <label class="col year-input">
             <div class="item item-input">
-                <input type="number" ng-model="bind.year" min="1900" max="2999" ng-change="change('year')" ng-blur="changed()" required>
+                <div>
+                    <input type="number" ng-model="bind.year" min="1900" max="2999" ng-change="change('year')" ng-blur="changed()" required>
+                </div>
             </div>
         </label>
         <div class="col col-10 right-arrow">
@@ -44,25 +46,33 @@
         <div class="col"></div>
         <label class="col col-20">
             <div class="item item-input">
-                <input type="text" ng-model="bind.hour" pattern="0?([01]?[0-9]|2[0-3])" ng-change="change('hour')" ng-blur="changed()" required>
+                <div>
+                    <input type="text" ng-model="bind.hour" pattern="0?([01]?[0-9]|2[0-3])" ng-change="change('hour')" ng-blur="changed()" required>
+                </div>
             </div>
         </label>
         <div class="col colon">:</div>
         <label class="col col-20">
             <div class="item item-input">
-                <input type="text" ng-model="bind.minute" pattern="0?[0-5]?[0-9]" ng-change="change('minute')" ng-blur="changed()" required>
+                <div>
+                    <input type="text" ng-model="bind.minute" pattern="0?[0-5]?[0-9]" ng-change="change('minute')" ng-blur="changed()" required>
+                </div>
             </div>
         </label>
         <div ng-if-start="secondsEnabled" class="col colon">:</div>
         <label ng-if-end class="col col-20">
             <div class="item item-input">
-                <input type="text" ng-model="bind.second" pattern="0?[0-5]?[0-9]" ng-change="change('second')" ng-blur="changed()" required>
+                <div>
+                    <input type="text" ng-model="bind.second" pattern="0?[0-5]?[0-9]" ng-change="change('second')" ng-blur="changed()" required>
+                </div>
             </div>
         </label>
         <div ng-if-start="meridiemEnabled" class="col"></div>
         <label ng-if-end class="col col-20">
             <div class="item item-input">
-                <input type="text" ng-model="bind.meridiem" pattern="[aApP][mM]" ng-change="change('meridiem')" ng-blur="changed()" required>
+                <div>
+                    <input type="text" ng-model="bind.meridiem" pattern="[aApP][mM]" ng-change="change('meridiem')" ng-blur="changed()" required>
+                </div>
             </div>
         </label>
         <div class="col"></div>
