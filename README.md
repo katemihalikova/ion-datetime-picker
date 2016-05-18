@@ -20,6 +20,7 @@ The ion-datetime-picker component has these features:
 - Pick time with or without seconds
 - Configure popup title and button labels
 - Configure i18n to get weekdays and months in your language
+- Configure size of a step
 
 # Demo
 
@@ -76,6 +77,10 @@ By default, in the time picker, I allow to change only hours and minutes. Set th
 ### `am-pm` attribute
 
 By default, in the time picker, I use 24-hour clock. Set this attribute to change it to 12-hour clock.
+
+### `month-step`, `hour-step`, `minute-step` and `second-step` attributes
+
+By default, when any caret button is tapped, I add or subtract 1 particular unit. Set these attributes to change it to anything you want.
 
 ### `title` and `sub-title` attributes
 
