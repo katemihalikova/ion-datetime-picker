@@ -36,18 +36,23 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 # Installation
 
 1. Use bower to install the new module:
-```bash
-bower install ion-datetime-picker --save
-```
+
+    ```bash
+    bower install ion-datetime-picker --save
+    ```
+    
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
-```html
-<script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
-<link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
-```
+
+   ```html
+   <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
+   <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
+   ```
+   
 3. Add `ion-datetime-picker` as a dependency on your Ionic app:
-```javascript
-angular.module("myApp", ["ionic", "ion-datetime-picker"]);
-```
+
+   ```javascript
+   angular.module("myApp", ["ionic", "ion-datetime-picker"]);
+   ```
 
 # Usage
 
