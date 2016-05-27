@@ -24,7 +24,7 @@ angular.module("ion-datetime-picker", ["ionic"])
 
                 $scope.showPopup = function() {
                     $ionicPopup.show({
-                        templateUrl: "picker-popup.html",
+                        templateUrl: "lib/ion-datetime-picker/src/picker-popup.html",
                         title: $scope.title || ("Pick " + ($scope.dateEnabled ? "a date" : "") + ($scope.dateEnabled && $scope.timeEnabled ? " and " : "") + ($scope.timeEnabled ? "a time" : "")),
                         subTitle: $scope.subTitle || "",
                         scope: $scope,

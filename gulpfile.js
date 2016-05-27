@@ -23,6 +23,7 @@ gulp.task("html", function() {
         }))
         .pipe(ngHtml2js({
             moduleName: "ion-datetime-picker",
+            prefix: "lib/ion-datetime-picker/src/",
             declareModule: false
         }))
         .pipe(concat("ion-datetime-picker.min.js"))
