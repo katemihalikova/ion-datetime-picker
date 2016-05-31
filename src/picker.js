@@ -82,10 +82,7 @@ angular.module("ion-datetime-picker", ["ionic"])
                         if ($scope.mondayFirst) {
                             $scope.firstDay = ($scope.firstDay || 7) - 1;
                         }
-                        $scope.daysInMonth = new Date($scope.year, $scope.month + 1, 0).getDate();
-                        if ($scope.day > $scope.daysInMonth) {
-                            $scope.day = $scope.daysInMonth;
-                        }
+                        $scope.daysInMonth = getDaysInMonth($scope.year, $scope.month);
                     }
 
                     if ($scope.timeEnabled) {
@@ -101,6 +98,10 @@ angular.module("ion-datetime-picker", ["ionic"])
                     }
                 };
 
+                var getDaysInMonth = function(year, month) {
+                    return new Date(year, month + 1, 0).getDate();
+                };
+
                 $scope.changeBy = function(value, unit) {
                     if (+value) {
                         // DST workaround
@@ -111,6 +112,9 @@ angular.module("ion-datetime-picker", ["ionic"])
                             }
                         }
                         $scope[unit] += +value;
+                        if (unit === "month" || unit === "year") {
+                            $scope.day = Math.min($scope.day, getDaysInMonth($scope.year, $scope.month));
+                        }
                         changeViewData();
                     }
                 };
@@ -126,6 +130,9 @@ angular.module("ion-datetime-picker", ["ionic"])
                         changeViewData();
                     } else if (+value || value === "0") {
                         $scope[unit] = +value;
+                        if (unit === "month" || unit === "year") {
+                            $scope.day = Math.min($scope.day, getDaysInMonth($scope.year, $scope.month));
+                        }
                         changeViewData();
                     }
                 };
