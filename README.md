@@ -5,11 +5,13 @@
 ![GitHub issues](https://img.shields.io/github/issues/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 ![License](https://img.shields.io/github/license/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 
-> Date and/or time picker for awesome [Ionic framework](http://ionicframework.com/)
+> Date and/or time picker for awesome [Ionic framework](http://ionicframework.com/) v1
 
 # Introduction
 
 I made this component because of poor implementation of native datetime picker in Android webview. How funny it was when I discovered that I can only pick a time between 0:00 and 11:59 on my 24-hour clock phone :)
+
+*Looking for a [picker](http://blog.ionic.io/ionic-2-fixing-date-inputs-for-the-mobile-web/) that works with Ionic framework v2?*
 
 # Features
 
@@ -40,14 +42,14 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
     ```bash
     bower install ion-datetime-picker --save
     ```
-    
+
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
 
    ```html
    <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
    ```
-   
+
 3. Add `ion-datetime-picker` as a dependency on your Ionic app:
 
    ```javascript
