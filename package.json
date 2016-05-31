@@ -1,6 +1,6 @@
 {
   "name": "ion-datetime-picker",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Date and/or time picker for awesome ionic framework",
   "main": [
     "release/ion-datetime-picker.js",
