@@ -103,14 +103,13 @@ Configure the text of buttons at the bottom of the picker.
 
 Disable/Enable calendar days according to type and date range specified.
 
-E.g. 
-```
-only-valid="{'after': '2016-04-09' }"
-only-valid="{'after': 'today', 'inclusive': true }"
-only-valid="{'outside': {'initial': '2016-04-09', 'final': '2016-06-15'}, 'inclusive': true }"
+```html
+only-valid="{'after': '2016-04-09'}"
+only-valid="{'after': 'today', 'inclusive': true}"
+only-valid="{'outside': {'initial': '2016-04-09', 'final': '2016-06-15'}, 'inclusive': true}"
 ```
 
-Types supported: 'after', 'before', 'between' and 'outside'. If you want to include the day specified, set 'inclusive' property as 'true'.
+Types supported: `'after'`, `'before'`, `'between'` and `'outside'`. If you want to include the day specified, set `'inclusive'` property to `true`.
 
 ## Internationalization factory
 
