@@ -3,6 +3,8 @@
 ![Bower version](https://img.shields.io/bower/v/ion-datetime-picker.svg?style=flat-square)
 ![Ionic version](https://img.shields.io/badge/ionic-%5E1.0.0--beta.9-yellow.svg?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/katemihalikova/ion-datetime-picker.svg?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/katemihalikova/ion-datetime-picker.svg?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 ![License](https://img.shields.io/github/license/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 
 > Date and/or time picker for awesome [Ionic framework](http://ionicframework.com/) v1
