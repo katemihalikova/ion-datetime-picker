@@ -123,7 +123,7 @@ angular.module("ion-datetime-picker", ["ionic"])
                         $scope.day = date.getDate();
 
                         $scope.bind.year = $scope.year;
-                        $scope.bind.month = $scope.month.toString();
+                        $scope.bind.month = $scope.month;
 
                         $scope.firstDay = new Date($scope.year, $scope.month, 1).getDay();
                         if ($scope.mondayFirst) {
@@ -175,7 +175,7 @@ angular.module("ion-datetime-picker", ["ionic"])
                             $scope.hour += 12;
                         }
                         changeViewData();
-                    } else if (+value || value === "0") {
+                    } else if (+value || +value === 0) {
                         $scope[unit] = +value;
                         if (unit === "month" || unit === "year") {
                             $scope.day = Math.min($scope.day, getDaysInMonth($scope.year, $scope.month));

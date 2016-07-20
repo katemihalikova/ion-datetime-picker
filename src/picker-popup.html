@@ -5,7 +5,7 @@
         </div>
         <label class="col col-50 month-input">
             <div class="item item-input item-select">
-                <select ng-model="bind.month" ng-options="index as month for (index, month) in i18n.months" ng-change="change('month')"></select>
+                <select ng-model="bind.month" ng-options="i18n.months.indexOf(month) as month for month in i18n.months" ng-change="change('month')"></select>
             </div>
         </label>
         <label class="col year-input">
