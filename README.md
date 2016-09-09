@@ -64,13 +64,17 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 # Usage
 
 Put the `ion-datetime-picker` directive alongside the `ng-model` wherever you want to tap to show the picker:
+
 ```html
 <ion-list>
-    <ion-item ion-datetime-picker ng-model="datetimeValue">
+    <div class="item" ion-datetime-picker ng-model="datetimeValue">
         {{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
-    </ion-item>
+    </div>
 </ion-list>
 ```
+
+*It is not possible to use `<ion-item>` until [#18](https://github.com/katemihalikova/ion-datetime-picker/issues/18) is fixed.*
+
 
 ## Configuration attributes
 
