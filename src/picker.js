@@ -221,7 +221,7 @@ angular.module("ion-datetime-picker", ["ionic"])
                     } else
                     if ($scope.onlyValid.before){
 
-                        var beforeDate = createDate($scope.onlyValid.after);
+                        var beforeDate = createDate($scope.onlyValid.before);
 
                         if ($scope.onlyValid.inclusive) {
                             isValid = currentDate <= beforeDate;
