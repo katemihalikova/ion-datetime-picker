@@ -9,6 +9,7 @@
   "scripts": {},
   "author": "https://github.com/katemihalikova, kate@katemihalikova.cz",
   "license": "MIT",
+  "repository": "katemihalikova/ion-datetime-picker",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
