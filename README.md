@@ -50,16 +50,16 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 
 2. Import the `ion-datetime-picker` javascript and css file into your HTML file (or use [wiredep](https://github.com/taptapship/wiredep)):
 
-   ```html
-   <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
-   <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
-   ```
+    ```html
+    <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
+    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
+    ```
 
 3. Add `ion-datetime-picker` as a dependency on your Ionic app:
 
-   ```javascript
-   angular.module("myApp", ["ionic", "ion-datetime-picker"]);
-   ```
+    ```javascript
+    angular.module("myApp", ["ionic", "ion-datetime-picker"]);
+    ```
 
 # Usage
 
@@ -67,9 +67,9 @@ Put the `ion-datetime-picker` directive alongside the `ng-model` wherever you wa
 
 ```html
 <ion-list>
-    <div class="item" ion-datetime-picker ng-model="datetimeValue">
-        {{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
-    </div>
+  <div class="item" ion-datetime-picker ng-model="datetimeValue">
+    {{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
+  </div>
 </ion-list>
 ```
 
@@ -142,14 +142,14 @@ Custom space-delimited classes applied to the buttons at the bottom of the picke
 
 ```js
 angular.module("myApp")
-    .run(function($ionicPickerI18n) {
-        $ionicPickerI18n.weekdays = ["Нд", "Lu", "Út", "Mi", "To", "금", "Sá"];
-        $ionicPickerI18n.months = ["Janvier", "Febrero", "März", "四月", "Maio", "Kesäkuu", "Červenec", "अगस्त", "Вересень", "Październik", "Νοέμβριος", "డిసెంబర్"];
-        $ionicPickerI18n.ok = "オーケー";
-        $ionicPickerI18n.cancel = "Cancelar";
-        $ionicPickerI18n.okClass = "button-positive";
-        $ionicPickerI18n.cancelClass = "button-stable";
-    });
+  .run(function($ionicPickerI18n) {
+    $ionicPickerI18n.weekdays = ["Нд", "Lu", "Út", "Mi", "To", "금", "Sá"];
+    $ionicPickerI18n.months = ["Janvier", "Febrero", "März", "四月", "Maio", "Kesäkuu", "Červenec", "अगस्त", "Вересень", "Październik", "Νοέμβριος", "డిసెంబర్"];
+    $ionicPickerI18n.ok = "オーケー";
+    $ionicPickerI18n.cancel = "Cancelar";
+    $ionicPickerI18n.okClass = "button-positive";
+    $ionicPickerI18n.cancelClass = "button-stable";
+  });
 ```
 
 ## Daylight saving time
