@@ -19,7 +19,7 @@
     "phonegap"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/katemihalikova/ionic-datetime-picker",
+  "homepage": "https://github.com/katemihalikova/ion-datetime-picker",
   "ignore": [
     "**/.*",
     "node_modules"
