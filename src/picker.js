@@ -208,13 +208,13 @@ angular.module("ion-datetime-picker", ["ionic"])
           if (!(constraints instanceof Array)) {
             constraints = [constraints];
           }
-          
+
           var isValid = true;
           for (var i = 0; i < constraints.length; i++) {
             var currentRule = constraints[i];
-            
+
             if (currentRule.after) {
-  
+
               var afterDate = createDate(currentRule.after);
               if (currentRule.inclusive) {
                 isValid = currentDate >= afterDate;
@@ -223,12 +223,12 @@ angular.module("ion-datetime-picker", ["ionic"])
                 isValid = currentDate > afterDate;
                 if (!isValid && computeNextValidDate) setNextValidDate(afterDate, 1);
               }
-  
+
             } else
             if (currentRule.before){
-  
-              var beforeDate = createDate(currentRule.after);
-  
+
+              var beforeDate = createDate(currentRule.before);
+
               if (currentRule.inclusive) {
                 isValid = currentDate <= beforeDate;
                 if (!isValid && computeNextValidDate) setNextValidDate(beforeDate, 0);
@@ -236,13 +236,13 @@ angular.module("ion-datetime-picker", ["ionic"])
                 isValid = currentDate < beforeDate;
                 if (!isValid && computeNextValidDate) setNextValidDate(beforeDate, -1);
               }
-  
+
             } else
             if (currentRule.between){
-  
+
               var initialDate = createDate(currentRule.between.initial);
               var finalDate = createDate(currentRule.between.final);
-  
+
               if (currentRule.inclusive) {
                 isValid = currentDate >= initialDate && currentDate <= finalDate;
                 if (!isValid && computeNextValidDate) {
@@ -256,13 +256,13 @@ angular.module("ion-datetime-picker", ["ionic"])
                   if (currentDate >= finalDate) setNextValidDate(finalDate, -1);
                 }
               }
-  
+
             } else
             if (currentRule.outside){
-  
+
               var initialDate = createDate(currentRule.outside.initial);
               var finalDate = createDate(currentRule.outside.final);
-  
+
               if (currentRule.inclusive) {
                 isValid = currentDate <= initialDate || currentDate >= finalDate;
                 if (!isValid && computeNextValidDate) {
@@ -278,14 +278,14 @@ angular.module("ion-datetime-picker", ["ionic"])
                   if (lastValidDate > finalDate) setNextValidDate(initialDate, -1);
                 }
               }
-  
+
             }
 
             if (!isValid) {
               break;
             }
           }
-          
+
           return isValid
 
         };
