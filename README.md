@@ -1,6 +1,6 @@
 # ion-datetime-picker
 ![npm version](https://img.shields.io/npm/v/ion-datetime-picker/ionic3.svg?style=flat-square)
-![Ionic version](https://img.shields.io/badge/ionic-3.1.1-yellow.svg?style=flat-square)
+![Ionic version](https://img.shields.io/badge/ionic-3.0.1%20%7C%7C%203.1.0%20%7C%7C%203.1.1-yellow.svg?style=flat-square)
 ![License](https://img.shields.io/github/license/katemihalikova/ion-datetime-picker.svg?style=flat-square)
 
 > Date and/or time picker for awesome [Ionic framework](https://ionicframework.com/) v3
