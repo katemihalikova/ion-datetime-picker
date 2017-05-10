@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "target": "es2015",
+    "lib": ["dom", "es2015"],
+    "newLine": "LF",
+    "strictNullChecks": false,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
