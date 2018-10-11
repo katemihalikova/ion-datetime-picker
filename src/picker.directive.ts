@@ -52,12 +52,12 @@ export class DatetimePickerDirective {
     let val = this.input.value || {};
     let now = new Date();
     pickerOptions.modelDate = new Date(
-      val.year || (pickerOptions.dateEnabled ? now.getFullYear() : 2018),
-      val.month ? val.month - 1 : (pickerOptions.dateEnabled ? now.getMonth() : 0),
-      val.day || (pickerOptions.dateEnabled ? now.getDate() : 1),
-      val.hour || (pickerOptions.timeEnabled ? now.getHours() : 0),
-      val.minute || (pickerOptions.timeEnabled ? now.getMinutes() : 0),
-      val.second || (pickerOptions.timeEnabled && pickerOptions.secondsEnabled ? now.getSeconds() : 0),
+      val.year !== undefined ? val.year : (pickerOptions.dateEnabled ? now.getFullYear() : 2018),
+      val.month !== undefined ? val.month - 1 : (pickerOptions.dateEnabled ? now.getMonth() : 0),
+      val.day !== undefined ? val.day : (pickerOptions.dateEnabled ? now.getDate() : 1),
+      val.hour !== undefined ? val.hour : (pickerOptions.timeEnabled ? now.getHours() : 0),
+      val.minute !== undefined ? val.minute : (pickerOptions.timeEnabled ? now.getMinutes() : 0),
+      val.second !== undefined ? val.second : (pickerOptions.timeEnabled && pickerOptions.secondsEnabled ? now.getSeconds() : 0),
     );
 
     const picker = this.datetimePickerAlertController.create(pickerOptions);
